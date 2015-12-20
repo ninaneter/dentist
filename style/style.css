@@ -1,0 +1,102 @@
+@import url(http://fonts.googleapis.com/earlyaccess/alefhebrew.css);
+@media (max-width: 650px) {
+  .hebContainer .phone {
+    margin-right: 20px;
+  }
+  .rusContainer .phone {
+    margin-left: 20px;
+  }
+  .header {
+    height: 300px;
+  }
+}
+@media (min-width: 651px) {
+  .hebContainer .phone {
+    margin-right: 100px;
+  }
+  .rusContainer .phone {
+    margin-left: 100px;
+  }
+  .header {
+    height: 100px;
+  }
+}
+@media (min-width: 992px) {
+  .hebContainer .phone {
+    margin-right: 200px;
+  }
+  .rusContainer .phone {
+    margin-left: 200px;
+  }
+}
+@media (min-width: 1200px) {
+  .hebContainer .phone {
+    margin-right: 400px;
+  }
+  .rusContainer .phone {
+    margin-left: 400px;
+  }
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  font-size: 16px;
+  background-color: #ebf5ff;
+}
+body .container {
+  background-color: white;
+  height: 100%;
+}
+body .container .hebContainer {
+  font-family: 'Alef Hebrew', serif;
+  direction: rtl;
+}
+body .container .hebContainer .hebMenu {
+  float: left;
+  margin-left: 10px;
+}
+body .container .hebContainer .mainContent img {
+  float: right;
+  margin-left: 10px;
+  width: 200px;
+}
+body .container .rusContainer .mainContent img {
+  float: left;
+  margin-right: 10px;
+  width: 200px;
+}
+body .container .header .logo {
+  width: 100px;
+}
+body .container .header .title {
+  margin: 10px 20px;
+  color: #638b29;
+  font-size: 24px;
+  font-weight: bold;
+}
+body .container .header .phone {
+  margin-top: 10px;
+  font-size: 22px;
+  font-weight: bold;
+}
+body .container .header .flag {
+  margin: 5px 2px;
+  cursor: pointer;
+}
+body .container .menu {
+  background-color: #ff9900;
+}
+body .container .menu .menuItem {
+  font-weight: bold;
+}
+.right {
+  float: right;
+}
+.left {
+  float: left;
+}
+.hidden {
+  display: none;
+}

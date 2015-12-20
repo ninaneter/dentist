@@ -1,0 +1,133 @@
+@import url(http://fonts.googleapis.com/earlyaccess/alefhebrew.css);
+
+@green: #AFD776;
+@blue: #6599FF;
+@orange: #FF9900;
+@bg-color: #EBF5FF;
+
+@font: 16px;
+
+@media(max-width: 650px){
+    .hebContainer {
+        .phone {
+                margin-right: 20px;
+            }    
+    }
+    .rusContainer {
+            .phone {
+                margin-left: 20px;
+            }
+    }
+    .header {
+            height: 300px;
+    }
+}
+@media(min-width: 651px){
+    .hebContainer {
+        .phone {
+                margin-right: 100px;
+            }    
+    }
+    .rusContainer {
+            .phone {
+                margin-left: 100px;
+            }
+    }
+    .header {
+            height: 100px;
+    }
+}
+@media(min-width: 992px){
+    .hebContainer {
+        .phone {
+                margin-right: 200px;
+            }    
+    }
+    .rusContainer {
+            .phone {
+                margin-left: 200px;
+            }
+    }
+} 
+@media(min-width: 1200px){
+    .hebContainer {
+        .phone {
+                margin-right: 400px;
+            }    
+    }
+    .rusContainer {
+            .phone {
+                margin-left: 400px;
+            }
+    }
+}
+html, body {
+  height: 100%;
+}
+body {
+    font-size: @font;
+    background-color: @bg-color;
+    .container {
+        background-color: white;
+        height: 100%;
+        .hebContainer {
+            font-family: 'Alef Hebrew', serif;
+            direction: rtl;
+            .hebMenu {
+                float: left;
+                margin-left: 10px;
+            }
+            .mainContent {
+                img {
+                    float: right;
+                    margin-left: 10px;
+                    width: 200px;
+                }
+            }
+        }
+        .rusContainer {
+            .mainContent {
+                img {
+                    float: left;
+                    margin-right: 10px;
+                    width: 200px;
+                }
+            }
+        }
+        .header {
+            .logo {
+                width: 100px;
+            }
+            .title {
+                margin: 10px 20px;
+                color: darken(@green, 30%);
+                font-size: @font + 8px;
+                font-weight: bold;
+            }
+            .phone {
+                margin-top: 10px;
+                font-size: @font + 6px;
+                font-weight: bold;
+            }
+            .flag {
+                margin: 5px 2px;
+                cursor: pointer;
+            }
+        }
+        .menu {
+            background-color: @orange;
+            .menuItem {
+                font-weight: bold;
+            }
+        }
+    }    
+}
+.right {
+    float: right;
+}
+.left {
+    float: left;
+}
+.hidden {
+    display: none;
+}
